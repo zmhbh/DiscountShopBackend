@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.PreparedStatement;
-
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
@@ -29,7 +28,7 @@ public class LoginInfo {
 			if (loginType.equals("consumer")) {
 				sql = "Select * from consumers where username = ?";
 			}
-			//
+			// retailer
 			else {
 				sql = "Select * from retailers where username = ?";
 			}

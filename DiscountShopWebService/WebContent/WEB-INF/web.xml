@@ -16,10 +16,19 @@
 	<servlet-name>LoginServlet</servlet-name>
 	<servlet-class>view.LoginServlet</servlet-class>
 	</servlet>
+	
 	<servlet-mapping>
 	<servlet-name>LoginServlet</servlet-name>
 	<url-pattern>/LoginServlet</url-pattern>	
 	</servlet-mapping>
+	
+	<servlet>
+	<description>CreateUser Servlet</description>
+	<display-name>CreateUserServlet</display-name>
+	<servlet-name>CreateUserServlet</servlet-name>
+	<servlet-class>view.CreateUserServlet</servlet-class>
+	</servlet>
+	
 	
 	<resource-ref>
 	<description>MySQL Datasource</description>
