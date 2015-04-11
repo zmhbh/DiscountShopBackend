@@ -2,20 +2,19 @@ package view;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import model.Login;
-
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import controller.RetrieveLoginInfo;
 
-import controller.LoginInfo;
 
+//already act as a web service
+//////////////////////////////
 public class LoginServlet extends HttpServlet{
 
 	private static final long serialVersionUID = -7003289728882047706L;
@@ -47,7 +46,7 @@ public class LoginServlet extends HttpServlet{
 		//login type comming from Android
 		String loginType=request.getParameter("loginType").trim();
 		//get login info based on username and loginType
-		LoginInfo loginInfo = new LoginInfo();
+		RetrieveLoginInfo loginInfo = new RetrieveLoginInfo();
 		Login login = loginInfo.getInfo(loginType,username);
 		
 		// if invalid username

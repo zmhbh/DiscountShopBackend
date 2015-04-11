@@ -18,11 +18,10 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 import controller.CreateUser;
-import controller.LoginInfo;
+import controller.RetrieveLoginInfo;
 
-/**
- * Servlet implementation class CreateUserServlet
- */
+//already act as a web service
+//////////////////////////////
 @WebServlet("/CreateUserServlet")
 public class CreateUserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

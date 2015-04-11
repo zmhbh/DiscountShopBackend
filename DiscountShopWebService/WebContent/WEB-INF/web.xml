@@ -29,6 +29,27 @@
 	<servlet-class>view.CreateUserServlet</servlet-class>
 	</servlet>
 	
+	<servlet>
+	<description>AddItem Servlet</description>
+	<display-name>AddItemServlet</display-name>
+	<servlet-name>AddItemServlet</servlet-name>
+	<servlet-class>view.AddItemServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<description>Update Servlet</description>
+	<display-name>UpdateServlet</display-name>
+	<servlet-name>UpdateServlet</servlet-name>
+	<servlet-class>view.UpdateServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<description>Delete Servlet</description>
+	<display-name>DeleteServlet</display-name>
+	<servlet-name>DeleteServlet</servlet-name>
+	<servlet-class>view.DeleteServlet</servlet-class>
+	</servlet>
+	
 	
 	<resource-ref>
 	<description>MySQL Datasource</description>

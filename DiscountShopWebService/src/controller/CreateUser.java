@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 
 import model.Consumer;
 import model.Retailer;
-
+// already act as a web service
 public class CreateUser {
 	private Connection connection = null;
 	private Statement statement = null;

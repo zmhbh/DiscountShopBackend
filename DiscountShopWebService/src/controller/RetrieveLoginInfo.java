@@ -9,8 +9,8 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 import model.Login;
-
-public class LoginInfo {
+//already act as a web service
+public class RetrieveLoginInfo {
 
 	private Connection connection = null;
 	private PreparedStatement statement = null;

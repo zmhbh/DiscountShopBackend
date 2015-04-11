@@ -1,4 +1,6 @@
-package databaseInitilization;
+package databaseInitialization;
+
+// this package is only used for the initialization, so it executes only one time
 
 import java.io.BufferedReader;
 
